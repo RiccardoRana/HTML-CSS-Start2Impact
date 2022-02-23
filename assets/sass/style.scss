@@ -19,6 +19,7 @@ h2 {
     font-family: $font-stack;
     color: $light-color;
     font-weight: 500;
+    font-size: 21px;
 }
 
 .header-container {
@@ -38,32 +39,80 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-   
-    
+
     li {
         list-style-type: none;
         display: inline-block;
         padding: 15px;
-        margin-top: 20px;
+        margin-top: 10px;
     }
-    
-    
+
     a {
-     color:white;
-     text-decoration: none;
-     font-family: $font-stack;
-     font-weight: 500;
-     font-size: 15px;
-     
- }  
+        color: white;
+        text-decoration: none;
+        font-family: $font-stack;
+        font-weight: 500;
+        font-size: 15px;
+        padding-bottom: 7px;
+    }
 
-
-
-
-
-
-
-
+    a:hover {
+        border-bottom: 5px solid rgb(233, 233, 233);
+        border-radius: 2px;
+        transition: all 0.2s ease;
+    }
 }
 
-   
+.current-page a {
+    border-bottom: 4px solid rgb(233, 233, 233);
+    border-radius: 2px;
+}
+
+.presentation-container {
+    h3 {
+        color: $primary-color;
+        font-family: $font-stack;
+        font-size: 24px;
+        font-weight: 400;
+        margin: 30px;
+        line-height: 1.6;
+    }
+
+    p {
+        color: $secondary-color;
+        font-family: $font-stack;
+        margin: 30px;
+        line-height: 2;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .navbar-menu {
+        li {
+            padding: 15px;
+            margin-top: 25px;
+        }
+
+        a:hover {
+            border-bottom: 4px solid rgb(233, 233, 233);
+            border-radius: 2px;
+        }
+    }
+    .presentation-container {
+        width:80%;
+        h3 {
+            color: $primary-color;
+            font-family: $font-stack;
+            font-size: 30px;
+            font-weight: 400;
+            margin: 60px;
+        }
+        p {
+            color: $secondary-color;
+            font-family: $font-stack;
+            margin: -40px 60px 20px;
+            line-height: 2.5;
+            
+        }
+    }
+}

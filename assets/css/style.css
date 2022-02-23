@@ -17,6 +17,7 @@ h2 {
   font-family: "Poppins", sans-serif;
   color: white;
   font-weight: 500;
+  font-size: 21px;
 }
 
 .header-container {
@@ -41,7 +42,7 @@ h2 {
   list-style-type: none;
   display: inline-block;
   padding: 15px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .navbar-menu a {
   color: white;
@@ -49,6 +50,60 @@ h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 15px;
+  padding-bottom: 7px;
+}
+.navbar-menu a:hover {
+  border-bottom: 5px solid #e9e9e9;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+.current-page a {
+  border-bottom: 4px solid #e9e9e9;
+  border-radius: 2px;
+}
+
+.presentation-container h3 {
+  color: #1f1e1e;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 30px;
+  line-height: 1.6;
+}
+.presentation-container p {
+  color: #868686;
+  font-family: "Poppins", sans-serif;
+  margin: 30px;
+  line-height: 2;
+}
+
+@media only screen and (min-width: 700px) {
+  .navbar-menu li {
+    padding: 15px;
+    margin-top: 25px;
+  }
+  .navbar-menu a:hover {
+    border-bottom: 4px solid #e9e9e9;
+    border-radius: 2px;
+  }
+
+  .presentation-container {
+    width: 80%;
+  }
+  .presentation-container h3 {
+    color: #1f1e1e;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 60px;
+  }
+  .presentation-container p {
+    color: #868686;
+    font-family: "Poppins", sans-serif;
+    margin: -40px 60px 20px;
+    line-height: 2.5;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
