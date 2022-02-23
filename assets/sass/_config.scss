@@ -3,5 +3,12 @@
 $font-stack: 'Poppins', sans-serif;
 $primary-color: rgb(31, 30, 30);
 $light-color: white;
-$secondary-color: rgb(134, 134, 134);
+$secondary-color: rgb(151, 151, 151);
 $buttonprimary-color: #f72585;
+
+%p {
+    color: $secondary-color;
+    font-family: $font-stack;
+    margin: 30px;
+    line-height: 2;
+}
