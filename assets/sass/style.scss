@@ -100,6 +100,7 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border: none;
 }
 
 .myhistory-container {
@@ -128,6 +129,59 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border: none;
+}
+
+.mytools-container {
+    
+    h3 {
+        color: $primary-color;
+        font-family: $font-stack;
+        font-size: 30px;
+        font-weight: 400;
+        margin: 30px;
+        line-height: 1.6;
+        margin-left: 70px;
+    }
+
+    p {
+        @extend %p;
+    }
+
+    span {
+        color: rgb(82, 0, 82);
+    }
+}
+
+.mytools-image-container {
+    height: 350px;
+    width: 90%;
+    border-radius: 100%;
+    border: 1px solid black;
+    margin: 7%;
+    background: url("../images/UIExamples2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+}
+
+.inline-helper {
+    p {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 1%;
+    }
+
+
+}
+
+footer {
+    background-color: rgb(226, 226, 226);
+    height: 100px;
+    width: 100vw;
 }
 
 /* Desktop */
@@ -164,6 +218,7 @@ h2 {
     .presentation-image-container {
         height: 350px;
         width: 25%;
+        border: none;
         border-radius: 100%;
         margin: -10% 65% 10%;
         background-image: url("../images/IMG_7790.JPG");
@@ -190,8 +245,56 @@ h2 {
     .myhistory-image-container {
         height: 350px;
         width: 25%;
+        border: none;
         border-radius: 100%;
         margin: -20% 10% 10%;
         background-image: url("../images/pexels-caleb-oquendo-3038455.jpg");
     }
+    .mytools-container {
+        h3 {
+            color: $primary-color;
+            font-family: $font-stack;
+            font-size: 30px;
+            font-weight: 700;
+            margin: 30px;
+            line-height: 1.6;
+        }
+
+        p {
+            @extend %p;
+            line-height: 2.5;
+            width: 55%;
+        }
+    }
+
+    .mytools-image-container {
+        height: 350px;
+        width: 25%;
+        border: none;
+        border-radius: 100%;
+        margin: -20% 60% 10%;
+        background-image: url("../images/UIExamples2.png");
+    }
+    
+    .inline-helper {
+        margin-left: 4%;
+        p {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: -1px;
+        margin-top: 4px;
+        
+    }
+}
+
+footer {
+    background-color: rgb(226, 226, 226);
+    height: 150px;
+    width: 100vw;
+}
+
+
+
 }

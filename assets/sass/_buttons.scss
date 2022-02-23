@@ -1,0 +1,11 @@
+$button-primary-color: rgb(131, 1, 131);
+
+.button-primary{
+    color: $button-primary-color;
+    background-color: lighten($button-primary-color,70);
+    border-radius: 10%;
+    padding:5px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: -2%;
+}
