@@ -12,6 +12,7 @@
     font-family: $font-stack;
     margin: 30px;
     line-height: 2;
+    letter-spacing: 1px;
 }
 
 h1 {
@@ -133,7 +134,6 @@ h2 {
 }
 
 .mytools-container {
-    
     h3 {
         color: $primary-color;
         font-family: $font-stack;
@@ -174,14 +174,53 @@ h2 {
         flex-direction: column;
         margin-top: 1%;
     }
-
-
 }
 
 footer {
     background-color: rgb(226, 226, 226);
     height: 100px;
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    p {
+        font-family: $font-stack;
+    }
+    a {
+        color: $button-primary-color;
+    }
+}
+
+.fa {
+    padding: 20px;
+    font-size: 40px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+    color: grey;
+}
+
+/* Twitter */
+.fa-linkedin {
+    color: grey;
+}
+/* Instagram */
+.fa-instagram {
+    color: grey;
+}
+/* Behance */
+.fa-behance {
+    color: grey;
 }
 
 /* Desktop */
@@ -275,26 +314,72 @@ footer {
         margin: -20% 60% 10%;
         background-image: url("../images/UIExamples2.png");
     }
-    
+
     .inline-helper {
         margin-left: 4%;
         p {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            padding: -1px;
+            margin-top: 4px;
+        }
+    }
+
+    footer {
+        background-color: rgb(226, 226, 226);
+        height: 200px;
+        width: 100vw;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-direction: row;
-        padding: -1px;
-        margin-top: 4px;
+
+        p {
+            font-family: $font-stack;
+            font-size: 16px;
+            color: $secondary-color;
+        }
+        a {
+            color: $button-primary-color;
+            text-decoration: none;
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+
         
     }
-}
 
-footer {
-    background-color: rgb(226, 226, 226);
-    height: 150px;
-    width: 100vw;
-}
+    .fa {
+        padding: 40px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+    }
 
+    .fa:hover {
+        opacity: 0.7;
+    }
 
+    /* Facebook */
+    .fa-facebook {
+        color: grey;
+    }
 
+    /* Twitter */
+    .fa-linkedin {
+        color: grey;
+    }
+    /* Instagram */
+    .fa-instagram {
+        color: grey;
+    }
+    /* Behance */
+    .fa-behance {
+        color: grey;
+    }
 }

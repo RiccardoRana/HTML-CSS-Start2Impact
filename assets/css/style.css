@@ -27,6 +27,7 @@
   font-family: "Poppins", sans-serif;
   margin: 30px;
   line-height: 2;
+  letter-spacing: 1px;
 }
 
 h1 {
@@ -171,6 +172,48 @@ footer {
   background-color: #e2e2e2;
   height: 100px;
   width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer p {
+  font-family: "Poppins", sans-serif;
+}
+footer a {
+  color: #830183;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 40px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+  color: grey;
+}
+
+/* Twitter */
+.fa-linkedin {
+  color: grey;
+}
+
+/* Instagram */
+.fa-instagram {
+  color: grey;
+}
+
+/* Behance */
+.fa-behance {
+  color: grey;
 }
 
 /* Desktop */
@@ -268,8 +311,56 @@ footer {
 
   footer {
     background-color: #e2e2e2;
-    height: 150px;
+    height: 200px;
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  footer p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #979797;
+  }
+  footer a {
+    color: #830183;
+    text-decoration: none;
+  }
+  footer a:hover {
+    opacity: 0.7;
+  }
+
+  .fa {
+    padding: 40px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  /* Facebook */
+  .fa-facebook {
+    color: grey;
+  }
+
+  /* Twitter */
+  .fa-linkedin {
+    color: grey;
+  }
+
+  /* Instagram */
+  .fa-instagram {
+    color: grey;
+  }
+
+  /* Behance */
+  .fa-behance {
+    color: grey;
   }
 }
 
