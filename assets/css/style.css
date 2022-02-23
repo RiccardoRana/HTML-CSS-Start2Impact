@@ -78,6 +78,18 @@ h2 {
   line-height: 2;
 }
 
+.presentation-image-container {
+  height: 350px;
+  width: 90%;
+  border-radius: 100%;
+  border: 4px solid black;
+  margin: 5%;
+  background: url("../images/IMG_7790.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media only screen and (min-width: 700px) {
   .navbar-menu li {
     padding: 15px;
@@ -88,21 +100,28 @@ h2 {
     border-radius: 2px;
   }
 
-  .presentation-container {
-    width: 80%;
-  }
   .presentation-container h3 {
     color: #1f1e1e;
     font-family: "Poppins", sans-serif;
     font-size: 30px;
     font-weight: 400;
     margin: 60px;
+    font-weight: 700;
   }
   .presentation-container p {
     color: #868686;
     font-family: "Poppins", sans-serif;
     margin: -40px 60px 20px;
     line-height: 2.5;
+  }
+
+  .presentation-image-container {
+    height: 350px;
+    width: 25%;
+    border-radius: 100%;
+    border: 4px solid black;
+    margin: -10% 65% 80%;
+    background-image: url("../images/IMG_7790.JPG");
   }
 }
 
