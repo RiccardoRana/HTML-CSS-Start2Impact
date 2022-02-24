@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-.mytools-container p, .myhistory-container p, .presentation-container p, .portfolio-welcome-container p, .contacts-welcome-container p {
+.mytools-container p, .myhistory-container p, .presentation-container p, .projects-container .second-project-container p, .projects-container .first-project-container p, .portfolio-welcome-container p, .contacts-welcome-container p {
   color: #979797;
   font-family: "Poppins", sans-serif;
   margin: 30px;
@@ -37,7 +37,7 @@
   box-sizing: border-box;
 }
 
-.mytools-container p, .myhistory-container p, .presentation-container p, .portfolio-welcome-container p, .contacts-welcome-container p {
+.mytools-container p, .myhistory-container p, .presentation-container p, .projects-container .second-project-container p, .projects-container .first-project-container p, .portfolio-welcome-container p, .contacts-welcome-container p {
   color: #979797;
   font-family: "Poppins", sans-serif;
   margin: 30px;
@@ -133,7 +133,83 @@ h2 {
 .portfolio-welcome-container p {
   text-align: center;
 }
+.portfolio-welcome-container span {
+  font-size: 20px;
+}
 
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.projects-container .first-project-container {
+  height: 300px;
+  width: 90%;
+  border-radius: 8px;
+  text-align: center;
+}
+.projects-container .first-project-container img {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.projects-container .first-project-container h3 {
+  color: #830183;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  margin-top: 30px;
+  font-size: 30px;
+}
+.projects-container .first-project-container span {
+  color: #830183;
+}
+.projects-container .first-project-container button {
+  margin-left: -15px;
+  margin-top: 5px;
+}
+.projects-container .first-project-container a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.projects-container .second-project-container {
+  height: 300px;
+  width: 90%;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 430px;
+}
+.projects-container .second-project-container img {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.projects-container .second-project-container h3 {
+  color: #830183;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  margin-top: 30px;
+  font-size: 30px;
+}
+.projects-container .second-project-container span {
+  color: #830183;
+}
+.projects-container .second-project-container button {
+  margin-left: -15px;
+  margin-top: 5px;
+}
+.projects-container .second-project-container a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mt-helper-portfolio {
+  margin-top: 450px;
+}
+
+/*End Portfolio */
 .header-container {
   background-image: linear-gradient(to right, #ff3c3c, #fdfd59);
   height: 12rem;
@@ -450,6 +526,77 @@ footer a {
   /* Behance */
   .fa-behance {
     color: grey;
+  }
+
+  .projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 500px;
+  }
+  .projects-container .first-project-container {
+    height: 600px;
+    width: 90%;
+    border-radius: 8px;
+    text-align: center;
+    margin: 30px;
+    margin-top: -950px;
+  }
+  .projects-container .first-project-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  .projects-container .first-project-container h3 {
+    color: #830183;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    margin-top: 30px;
+    font-size: 30px;
+  }
+  .projects-container .first-project-container span {
+    color: #830183;
+  }
+  .projects-container .first-project-container button {
+    margin-left: -15px;
+    margin-top: 5px;
+  }
+  .projects-container .first-project-container a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .projects-container .second-project-container {
+    height: 600px;
+    width: 90%;
+    border-radius: 8px;
+    text-align: center;
+    margin: 30px;
+  }
+  .projects-container .second-project-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  .projects-container .second-project-container h3 {
+    color: #830183;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    margin-top: 30px;
+    font-size: 30px;
+  }
+  .projects-container .second-project-container span {
+    color: #830183;
+  }
+  .projects-container .second-project-container button {
+    margin-left: -15px;
+    margin-top: 5px;
+  }
+  .projects-container .second-project-container a {
+    text-decoration: none;
+    cursor: pointer;
   }
 }
 

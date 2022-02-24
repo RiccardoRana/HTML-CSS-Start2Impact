@@ -37,7 +37,6 @@ h2 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
 }
 
 .form-row {
@@ -76,7 +75,7 @@ h2 {
     }
 
     span {
-        color:$buttonprimary-color;
+        color: $buttonprimary-color;
     }
 }
 
@@ -98,36 +97,120 @@ h2 {
 
 /*Start Portfolio */
 
-
 .portfolio-welcome-container {
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
 
-h3 {
-    color:$primary-color;
-    font-size: 24px;
-    text-transform: uppercase;
-    font-family: $font-stack;
+    h3 {
+        color: $primary-color;
+        font-size: 24px;
+        text-transform: uppercase;
+        font-family: $font-stack;
+    }
+
+    p {
+        @extend %p;
+        text-align: center;
+    }
+
+    span {
+        font-size: 20px;
+    }
 }
 
-p {
-    @extend %p;
-    text-align: center;
+.projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .first-project-container {
+        height: 300px;
+        width: 90%;
+        border-radius: 8px;
+        text-align: center;
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        h3 {
+            color: $button-primary-color;
+            font-family: $font-stack;
+            font-weight: 300;
+            margin-top: 30px;
+            font-size: 30px;
+        }
+
+        p {
+            @extend %p;
+        }
+
+        span {
+            color: $button-primary-color;
+        }
+
+        button {
+            margin-left: -15px;
+            margin-top: 5px;
+        }
+        a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+    .second-project-container {
+        height: 300px;
+        width: 90%;
+        border-radius: 8px;
+        text-align: center;
+        margin-top: 430px;
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        h3 {
+            color: $button-primary-color;
+            font-family: $font-stack;
+            font-weight: 300;
+            margin-top: 30px;
+            font-size: 30px;
+        }
+
+        p {
+            @extend %p;
+        }
+
+        span {
+            color: $button-primary-color;
+        }
+
+        button {
+            margin-left: -15px;
+            margin-top: 5px;
+        }
+        a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
 }
 
-
-
-
-
+.mt-helper-portfolio {
+    margin-top: 450px;
 }
 
-
-
-
-
+/*End Portfolio */
 
 .header-container {
     background-image: linear-gradient(to right, rgb(255, 60, 60), rgb(253, 253, 89));
@@ -217,8 +300,6 @@ p {
         margin-top: 10px;
         margin-left: 50px;
     }
-
-    
 }
 
 .myhistory-image-container {
@@ -480,5 +561,94 @@ footer {
     /* Behance */
     .fa-behance {
         color: grey;
+    }
+
+    .projects-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-top: 500px;
+
+        .first-project-container {
+            height: 600px;
+            width: 90%;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px;
+            margin-top: -950px;
+
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: 8px;
+                object-fit: cover;
+            }
+
+            h3 {
+                color: $button-primary-color;
+                font-family: $font-stack;
+                font-weight: 300;
+                margin-top: 30px;
+                font-size: 30px;
+            }
+
+            p {
+                @extend %p;
+            }
+
+            span {
+                color: $button-primary-color;
+            }
+
+            button {
+                margin-left: -15px;
+                margin-top: 5px;
+            }
+            a {
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+
+        .second-project-container {
+            height: 600px;
+            width: 90%;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px;
+
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: 8px;
+                object-fit: cover;
+            }
+
+            h3 {
+                color: $button-primary-color;
+                font-family: $font-stack;
+                font-weight: 300;
+                margin-top: 30px;
+                font-size: 30px;
+            }
+
+            p {
+                @extend %p;
+            }
+
+            span {
+                color: $button-primary-color;
+            }
+
+            button {
+                margin-left: -15px;
+                margin-top: 5px;
+            }
+            a {
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
     }
 }
