@@ -1,6 +1,7 @@
 $button-primary-color: rgb(131, 1, 131);
+$button-secondary-color: rgb(0, 190, 165);
 
-.button-primary{
+.button-primary {
     color: $button-primary-color;
     background-color: lighten($button-primary-color,70);
     border-radius: 10%;
@@ -8,4 +9,19 @@ $button-primary-color: rgb(131, 1, 131);
     text-decoration: none;
     font-size: 20px;
     margin-left: -2%;
+}
+
+.button-secondary {
+    color: $button-primary-color;
+    background-color: lighten($button-primary-color,70);
+    border-radius: 8px;
+    padding:5px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: -2%;
+    margin-top: -10px;
+    border: 2px solid $button-primary-color;
+    margin-left: 35%;
+    cursor: pointer;
+    text-transform: uppercase;
 }

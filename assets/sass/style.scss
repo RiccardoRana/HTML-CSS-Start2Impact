@@ -30,6 +30,105 @@ h2 {
     font-size: 21px;
 }
 
+/* Contacts Title */
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.form-row {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+
+    label {
+        font-family: $font-stack;
+        margin-bottom: 5px;
+    }
+
+    textarea {
+        min-height: 250px;
+        resize: none;
+    }
+}
+
+.contacts-welcome-container {
+    h4 {
+        color: $primary-color;
+        font-family: $font-stack;
+        text-align: center;
+        margin: 15px;
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-top: 50px;
+    }
+
+    p {
+        @extend %p;
+        text-align: center;
+    }
+
+    span {
+        color:$buttonprimary-color;
+    }
+}
+
+.form-row input[type="email"],
+.form-row input[type="text"] {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 12px;
+}
+
+.mt-helper {
+    margin-top: 50px;
+}
+
+/*End Contacts */
+
+/*Start Portfolio */
+
+
+.portfolio-welcome-container {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin-top: 50px;
+
+h3 {
+    color:$primary-color;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: $font-stack;
+}
+
+p {
+    @extend %p;
+    text-align: center;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
 .header-container {
     background-image: linear-gradient(to right, rgb(255, 60, 60), rgb(253, 253, 89));
     height: 12rem;
@@ -118,6 +217,8 @@ h2 {
         margin-top: 10px;
         margin-left: 50px;
     }
+
+    
 }
 
 .myhistory-image-container {
@@ -349,8 +450,6 @@ footer {
         a:hover {
             opacity: 0.7;
         }
-
-        
     }
 
     .fa {
