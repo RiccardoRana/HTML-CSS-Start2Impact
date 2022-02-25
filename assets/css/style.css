@@ -31,6 +31,13 @@
   text-transform: uppercase;
 }
 
+.button-secondary:hover {
+  background-color: #fe52fe;
+}
+.button-secondary:hover a {
+  color: white;
+}
+
 * {
   padding: 0;
   margin: 0;
